@@ -1,0 +1,61 @@
+
+
+
+.footer {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 0;
+    border-radius: 30px;
+    background-color: rgba(255, 127, 127, 0.15);
+
+}
+
+.container {
+    font-family: 'Happy Monkey';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 48px;
+    cursor: pointer;
+}
+.About-Us, .Contact {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-list, .contact-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 400;
+}
+
+#aboutpara, #contactpara {
+    margin: 0;
+    font-size: 20px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 500;
+}
+
+.about-list li:hover, .contact-list li:hover {
+    cursor: pointer;
+    color: #FA7A7A;
+    transition: color 0.2s ease-in;
+}
+
+.container:hover {
+    cursor: pointer;
+    color: #980000;
+    transition: color 0.2s ease-in;
+}

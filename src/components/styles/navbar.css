@@ -1,0 +1,147 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter&&family=Poppins&display=swap');
+
+
+.navbar {
+    padding: 0% 10%;
+    
+}
+
+.navbar .nav-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-links {
+    gap: 2rem;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 5%;
+}
+
+a {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;    
+    letter-spacing: -0.04em;
+    margin: 0% 10%;
+    color: #3F3F3F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FA7A7A;
+    transition: color 0.2s ease-in;
+}
+
+.logo {
+    font-family: 'Happy Monkey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: #980000;
+    transition: color 0.2s ease-in;
+}
+
+.searchbar {
+    background: white;
+    border: 2.5px solid #3F3F3F;
+    border-radius: 51px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+    color: #3F3F3F;
+    text-indent: 17px;
+    max-width: 328px;
+    transition: all 0.25s ease-in-out;
+
+}
+
+.searchbar:focus{
+    background: #FFC4C4;
+    border: 2.5px solid #680101;
+    outline: none;
+    
+}
+
+.nav-icon-bar {
+    display: none;
+    transform: scale(2);
+    cursor: pointer;
+}
+
+.nav-hidden-open {
+    display: none;
+
+}
+
+.nav-hidden {
+    display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    img {
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .searchbar, .nav-links {
+        display: none;
+    }
+
+    .nav-icon-bar {
+        display: block;
+        z-index: 999999;
+            
+    }
+
+    .nav-hidden-open {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: center;
+        left: 0%;
+        position: absolute;
+        top: 10vh;
+        width: 100%;
+        z-index: 999999;
+    }
+
+
+        
+    .nav-links-hidden {
+        opacity: 100%;
+        display: flex;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        gap: 1.25rem;
+    }
+    
+}

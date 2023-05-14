@@ -1,0 +1,122 @@
+
+@keyframes jitter {
+    0% {transform: translateY(0%);}
+    100% {transform: translateY(-5%);}
+}
+
+.outer {
+    flex-wrap: wrap;
+    max-width: 385.2px;
+    background: #F9F9F9;
+    border: 2px solid #000000;
+    box-shadow: 0px 9px 41px rgba(0, 0, 0, 0.11);
+    border-radius: 30px;
+    padding: 15px;
+    padding-bottom: 0;
+    height: 350px;
+}
+
+.outer:hover {
+    box-shadow: 0px 10px 57px rgba(0, 0, 0, 0.288);
+    animation: jitter 1s linear;
+    animation-fill-mode: forwards;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.pink-back {
+    width: 326.4px;
+    height: 350px;
+    left: 29.4px;
+    top: 223px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgba(255, 127, 127, 0.15);
+    border-radius: 24px 24px 0px 0px;
+}
+
+.inner {
+    position: relative;
+    top: -60px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.shoe-text {
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.brand {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.price {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: -0.04em;
+    color: #980000;
+}
+#court {
+    display: flex;
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    height: auto;
+    width: 300px;
+    resize: both;
+}
+
+#air {
+    display: flex;
+    overflow: visible;
+    align-self: center;
+    height: 208px;
+    width: 300px;
+    resize: both;
+    margin: 15% 0;
+}
+
+#jordan {
+    display: flex;
+    overflow: visible;
+    align-self: center;
+    height: 208px;
+    width: 300px;
+    resize: both;
+    margin: 15% 0;
+}
+
+.shoe-type {
+    width: 200px;
+    height: 20px;
+    position: relative;
+    top: -30px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 107.5%;    
+    letter-spacing: -0.04em;
+    align-self: flex-start;
+    color: #6D6D6D;
+    display: flex;
+    padding: 0 3%;
+}
